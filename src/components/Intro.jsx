@@ -22,7 +22,7 @@ function Intro() {
 					backend systems, and turning ideas into working products.
 				</p>
 				<a
-					href=".\src\assets\resume.pdf"
+					href="https://drive.google.com/file/d/1nEmrPkoqAVwNr8MMl8xq2rb5UBZTkkK9/edit"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-[#f5b95f] border-2 border-[#f5b95f] p-3 hover:shadow-[#f5b95f]  hover:-translate-1 shadow-md hover:text-[#f5a733] transition duration-150"

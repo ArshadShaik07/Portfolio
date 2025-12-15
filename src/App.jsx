@@ -8,10 +8,9 @@ import Experience from "./components/Experience";
 
 function App() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		setLoading(true);
 		setTimeout(() => setLoading(false), 500);
 	}, []);
 

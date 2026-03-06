@@ -1,46 +1,14 @@
-# Portfolio Website
+# Portfolio
 
-A personal portfolio built with React + Vite to showcase projects, experience and contact information.
+This is my personal portfolio where I showcase my projects and skills.
 
-## <a href='https://my-portfolio-umber-two-fb58o1j805.vercel.app/
-'>Live link</a>
+[Live Demo](https://your-live-link.com)
 
 ## Features
+- Feature 1
+- Feature 2
 
--   Multi-section single-page layout (About, Projects, Experience, Contact)
--   Fixed left navigation for quick section jumps
--   Responsive layout with Tailwind CSS
--   Smooth scrolling
--   Easy to extend with new projects or sections
-
-## Tech stack
-
--   React
--   Vite
--   Tailwind CSS
--   JavaScript (ESNext)
--   Optional: deploy to Netlify / Vercel / GitHub Pages
-
-## Project structure
-
--   src/
-    -   components/ — React components (Intro, Projects, About, Contact, Experience, ...)
-    -   index.css — Tailwind + global styles
-    -   App.jsx — main layout and routing anchors
-    -   main.jsx — app entry
--   public/ — static assets
-
-## Setup (Windows)
-
-1. Install dependencies
-
-    - npm install
-
-2. Run dev server
-
-    - npm run dev
-    - Open the URL shown by Vite (usually http://localhost:5173)
-
-3. Build for production
-    - npm run build
-
+## Tech Stack
+- Technology 1
+- Technology 2
+- Technology 3

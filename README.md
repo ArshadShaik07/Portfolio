@@ -2,8 +2,8 @@
 
 A personal portfolio built with React + Vite to showcase projects, experience and contact information.
 
-## Live link
-https://my-portfolio-umber-two-fb58o1j805.vercel.app/
+## <a href='https://my-portfolio-umber-two-fb58o1j805.vercel.app/
+'>Live link</a>
 
 ## Features
 

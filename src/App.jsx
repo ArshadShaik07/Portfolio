@@ -8,12 +8,19 @@ import Experience from "./components/Experience";
 
 function App() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+<<<<<<< HEAD
 	const [loading, setLoading] = useState(false);
 	const [activeSection, setActiveSection] = useState("");
 
 	useEffect(() => {
 		setLoading(true);
 		setTimeout(() => setLoading(false), 800);
+=======
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => setLoading(false), 500);
+>>>>>>> f289fd748bea246ee5c7086e361eeeadb303d441
 	}, []);
 
 	useEffect(() => {

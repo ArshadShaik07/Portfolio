@@ -5,18 +5,21 @@ function Projects() {
 			desc: "A full-stack MERN application where users can book flights and hotels for holidays. Includes authentication, secure APIs, and real booking flows.",
 			gitLink: "https://github.com/ArshadShaik07/Holiday-Booking-Site",
 			liveLink: "https://holidaybookingsystem-frontend.onrender.com/",
+			num: "01",
 		},
 		{
 			title: "Notes App",
 			desc: "A full-stack MERN notes app with full CRUD functionality, MongoDB storage, and a clean responsive UI.",
 			gitLink: "https://github.com/ArshadShaik07/Notez0",
 			liveLink: "https://notez0-1.onrender.com/",
+			num: "02",
 		},
 		{
 			title: "Food Recipe App",
 			desc: "A React app to search for recipes, view details, and save your favorite dishes. Uses a public food API.",
 			gitLink: "https://github.com/ArshadShaik07/food-recipe-app",
 			liveLink: "https://food-recipe-app-shmi.onrender.com/",
+			num: "03",
 		},
 		{
 			title: "GitHub Profile Finder",
@@ -24,47 +27,55 @@ function Projects() {
 			gitLink:
 				"https://github.com/ArshadShaik07/Projects-using-React/tree/main/src/github-profile-finder",
 			liveLink: "",
+			num: "04",
 		},
 	];
 
 	return (
-		<section className="w-full py-14 px-6 flex flex-col items-center font-mono">
-			<div className="flex flex-col items-start">
-				<h2 className="text-5xl font-semibold mb-8 text-[#f5990f]">
+		<section className="py-28 px-10 md:px-16 border-b border-[#0f1923]">
+			<div className="max-w-2xl">
+				<p className="text-[13px] tracking-[0.2em] uppercase text-slate-600 mb-3">
+					02 — Work
+				</p>
+				<h2 className="font-sans font-extrabold text-slate-100 text-5xl md:text-6xl tracking-tight mb-4">
 					My Projects
 				</h2>
+				<div className="w-8 h-px bg-[#1e2a3a] mb-2" />
 
-				<div className="flex flex-col flex-wrap gap-6 max-w-3xl">
+				<div className="flex flex-col">
 					{projectList.map((p, index) => (
 						<div
 							key={index}
-							className="p-5 rounded-xl border hover:scale-102 transition duration-250 hover:bg-[#77133b] "
+							className="grid grid-cols-[40px_1fr] gap-6 py-8 border-b border-[#0f1923] group hover:-translate-y-1 transition-transform duration-200"
 						>
-							<p className="text-2xl font-semibold mb-1 text-[#f5b95f]">
-								{p.title}
-							</p>
-							<p className="text-gray-300 text-md">{p.desc}</p>
-							<div className="flex gap-x-3 items-center">
-								<a
-									href={p.gitLink}
-									target="_blank"
-									className="flex items-center gap-2 w-fit px-3 py-2 rounded-md border hover:bg-[#1e3a63] transition"
-								>
-									<img
-										src="https://img.icons8.com/?size=100&id=16318&format=png&color=f5b95f"
-										className="w-6"
-									/>
-									GitHub
-								</a>
-								{p.liveLink.length > 0 && (
+							<span className="text-[14px] tracking-wider text-[#1e2a3a] pt-1">
+								{p.num}
+							</span>
+							<div>
+								<h3 className="font-sans font-bold text-slate-100 text-2xl mb-2 group-hover:text-white transition-colors duration-200">
+									{p.title}
+								</h3>
+								<p className="text-[16px] leading-loose text-slate-500 font-light mb-5">
+									{p.desc}
+								</p>
+								<div className="flex gap-5 items-center">
 									<a
-										className="hover:underline"
-										href={p.liveLink}
+										href={p.gitLink}
 										target="_blank"
+										className="text-[14px] tracking-widest uppercase text-slate-600 hover:text-slate-200 no-underline transition-colors duration-200"
 									>
-										live link
+										GitHub →
 									</a>
-								)}
+									{p.liveLink && (
+										<a
+											href={p.liveLink}
+											target="_blank"
+											className="text-[11px] tracking-widest uppercase text-slate-600 hover:text-slate-200 no-underline transition-colors duration-200"
+										>
+											Live →
+										</a>
+									)}
+								</div>
 							</div>
 						</div>
 					))}

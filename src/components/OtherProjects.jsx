@@ -20,33 +20,34 @@ function OtherProjects() {
 	];
 
 	return (
-		<section className="w-full py-14 px-6 flex flex-col items-center font-mono">
-			<div className="flex flex-col items-start">
-				<h2 className="text-4xl font-semibold mb-10">Other Projects</h2>
+		<section className="py-28 px-10 md:px-16 border-b border-[#0f1923] ">
+			<div className="max-w-2xl">
+				<p className="text-[13px] tracking-[0.2em] uppercase text-slate-600 mb-3">
+					03 — Other
+				</p>
+				<h2 className="font-sans font-extrabold text-slate-100 text-4xl md:text-5xl tracking-tight mb-4">
+					Other Projects
+				</h2>
+				<div className="w-8 h-px bg-[#1e2a3a] mb-8" />
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
+				<div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#0f1923]">
 					{otherProjects.map((p, index) => (
 						<div
 							key={index}
-							className="p-5 rounded-xl flex flex-col justify-between w-64 h-46 transition duration-200 hover:scale-[1.05] border-2 border-[#1982c4]"
+							className="bg-[#080c10] p-7 flex flex-col justify-between min-h-[180px] hover:-translate-y-1 hover:bg-[#0d1420] transition-all duration-200 group"
 						>
 							<div>
-								<p
-									className="text-xl font-semibold mb-1"
-									style={{ color: "#f5b95f" }}
-								>
+								<h3 className="font-sans font-bold text-slate-100 text-xl mb-3 group-hover:text-white transition-colors">
 									{p.title}
-								</p>
-								<p className="text-gray-300 text-sm line-clamp-3">
+								</h3>
+								<p className="text-[14px] leading-relaxed text-slate-500 font-light">
 									{p.desc}
 								</p>
 							</div>
-
 							<a
 								href={p.gitLink}
 								target="_blank"
-								className="text-sm mt-3 underline hover:text-[#f5990f]"
-								style={{ color: "#f5b95f" }}
+								className="mt-5 text-[10px] tracking-widest uppercase text-slate-600 hover:text-slate-200 no-underline transition-colors duration-200"
 							>
 								GitHub →
 							</a>

@@ -1,46 +1,49 @@
 function Contact() {
 	return (
-		<section className="w-full py-14 px-6 flex justify-center font-mono">
-			<div className="max-w-3xl w-full p-8 rounded-xl text-center flex border-2 gap-1 border-[#1982c4] flex-col items-center">
-				<h2 className="text-4xl text-[#f5990f]  font-semibold mb-6">
-					Contact
-				</h2>
-
-				<p className="text-gray-300 mb-2 text-lg">
-					Want to work together or just say hi?
+		<section className="py-28 px-10 md:px-16 pb-40">
+			<div className="max-w-2xl">
+				<p className="text-[13px] tracking-[0.2em] uppercase text-slate-600 mb-3">
+					05 — Contact
 				</p>
-				<div>
+				<h2 className="font-sans font-extrabold text-slate-100 text-5xl md:text-6xl tracking-tight mb-4">
+					Get In Touch
+				</h2>
+				<div className="w-8 h-px bg-[#1e2a3a] mb-8" />
+
+				<p className="text-[16px] leading-loose text-slate-500 font-light mb-12 max-w-md">
+					Want to work together or just say hi? My inbox is always
+					open.
+				</p>
+
+				<div className="flex flex-col gap-3">
 					<a
 						href="mailto:arshadshaik2007@gmail.com"
-						className="inline-block px-6 py-3 rounded-md text-lg font-medium transition hover:text-[#bebebe] hover:underline"
+						className="inline-block w-fit px-6 py-2.5 text-[14px] tracking-widest uppercase text-slate-200 border border-[#1e2a3a] no-underline hover:bg-slate-200 hover:text-[#080c10] hover:border-slate-200 transition-all duration-200"
 					>
-						Email Me
+						Say Hello
 					</a>
 
-					<div className="flex justify-center gap-6 ">
+					<div className="flex gap-6 mt-4">
 						<a
 							href="https://github.com/ArshadShaik07"
 							target="_blank"
-							className="flex flex-col  items-center hover:opacity-80 transition"
+							className="text-[14px] tracking-widest uppercase text-slate-600 hover:text-slate-200 no-underline transition-colors duration-200"
 						>
-							<img
-								src="https://img.icons8.com/?size=100&id=16318&format=png&color=f5b95f"
-								className="w-8 mb-1"
-							/>
+							GitHub →
 						</a>
-
 						<a
 							href="https://www.linkedin.com/in/arshad-shaik-483668313/"
 							target="_blank"
-							className="flex flex-col items-center hover:opacity-80 transition"
+							className="text-[14px] tracking-widest uppercase text-slate-600 hover:text-slate-200 no-underline transition-colors duration-200"
 						>
-							<img
-								src="https://img.icons8.com/?size=100&id=13930&format=png&color=f5b95f"
-								className="w-8 mb-1"
-							/>
+							LinkedIn →
 						</a>
 					</div>
 				</div>
+
+				<p className="mt-20 text-[14px] tracking-wider text-[#1e2a3a]">
+					Designed & built by Arshad Shaik
+				</p>
 			</div>
 		</section>
 	);

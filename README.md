@@ -2,8 +2,8 @@
 
 A personal portfolio built with React + Vite to showcase projects, experience and contact information.
 
-## Live demo
-(https://portfolio-noic.onrender.com)
+## Live link
+https://my-portfolio-umber-two-fb58o1j805.vercel.app/
 
 ## Features
 
